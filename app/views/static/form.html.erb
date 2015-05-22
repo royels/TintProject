@@ -8,7 +8,7 @@
 	  <%= form_for @tweet, :url => "/display" do |f| %>
 		<span class="input-group-btn">
 		<%= f.text_field :keyword, :placeholder => "Keyword", class: "form-control" %>
-        	<%= f.submit "Search!", class: "btn btn-primary" %>
+        <%= f.submit "Search!", class: "btn btn-primary" %>
       	</span>
 	  <% end %>
 	</div>
