@@ -19,7 +19,7 @@ body
 	left: 0;
 }
 
-#email, #particles-js, 
+#particles-js, 
 {
 	pointer-events: all;
 }
@@ -58,15 +58,11 @@ h2
 	font-family: "Lato", sans-serif;
 }
 
-.container, .btn
+.container
 {
 	text-align: center;
 }
 
-//#email-parent
-//{
-//
-//}
 
 #bootstrap-form
 {
@@ -75,4 +71,8 @@ h2
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 30px;
+	
 }
+
+
+

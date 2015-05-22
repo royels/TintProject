@@ -6,7 +6,7 @@
 particlesJS 'particles-js',
   'particles':
     'number':
-      'value': 100
+      'value': 150
       'density':
         'enable': true
         'value_area': 800
@@ -16,7 +16,7 @@ particlesJS 'particles-js',
       'stroke':
         'width': 0
         'color': '#000000'
-      'polygon': 'nb_sides': 5
+      'polygon': 'nb_sides': 8
       'image':
         'src': 'img/github.svg'
         'width': 100
@@ -45,7 +45,7 @@ particlesJS 'particles-js',
       'width': 1
     'move':
       'enable': true
-      'speed': 2
+      'speed': 1
       'direction': 'none'
       'random': false
       'straight': false

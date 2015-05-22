@@ -4,21 +4,32 @@
 	<h1 class="special">Sentimentalize</h1>
 </div>
   <h2>Find the sentiment associated with a keyword on Twitter!</h2>
-	<div id = "bootstrap-form" class="row">
-  <div class="col-md-6 col-md-offset-3">
+	<div id = "bootstrap-form" class="row col-lg-6 input-group">
 	  <%= form_for @tweet, :url => "/display" do |f| %>
-	  <%= f.label :keyword %>
-	  <%= f.text_field :keyword, :placeholder => "Keyword" %>
-	  <%= f.submit "Search!", class: "btn btn-primary" %>
-    <% end %>
-  </div>
-</div>
-<!--
-  <form class = "formed" role="form">
-    <div id = "email-parent" class="form-group">
-      <input type="email" class="form-control" id="email" placeholder="Keyword">
-    </div>
-    <button type="submit" class="btn btn-default">Submit</button>
-  </form>
--->
+		<span class="input-group-btn">
+		<%= f.text_field :keyword, :placeholder => "Keyword", class: "form-control" %>
+        	<%= f.submit "Search!", class: "btn btn-primary" %>
+      	</span>
+	  <% end %>
+	</div>
+	
+	
+    
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 </div>
