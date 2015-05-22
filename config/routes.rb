@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+	resources :tweets
   	root                'static#form'
-	get 'display'    => 'static#display'
+	post 'display'    => 'static#display'
 end

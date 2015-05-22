@@ -1,6 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
 body
 {
 	pointer-events: none;
@@ -14,13 +15,13 @@ body
 	width: 100%;
 	height: 100%;
 	top: 0;
-	background-image: linear-gradient(rgba(240,0,0, 1), rgba(247, 100,100, 1), rgba(250, 250, 250, 1));
+	background-image: linear-gradient(#AB0909, rgba(247, 100,100, 1), rgba(250, 250, 250, 1));
 	left: 0;
 }
 
-.formed, #particles-js
+#email, #particles-js, 
 {
-	pointer-events: all;	
+	pointer-events: all;
 }
 
 .text
@@ -45,7 +46,33 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Helvetica", sans-serif;
   padding: 0;
   margin: 0;
-	font-size: 48pt;	
-	
+  font-size: 48pt;	
+	vertical-align: middle;
 }
-	
+
+h2
+{
+	font-size: 24pt;
+	text-align: center;
+	font-weight: bold;
+	font-family: "Lato", sans-serif;
+}
+
+.container, .btn
+{
+	text-align: center;
+}
+
+//#email-parent
+//{
+//
+//}
+
+#bootstrap-form
+{
+	pointer-events: all;	
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+}
