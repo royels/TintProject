@@ -57,6 +57,9 @@ Rails.application.configure do
   # Use a different cache store in production.
   # config.cache_store = :mem_cache_store
 
+Rails.application.configure do
+    config.secret_key_base = ENV["SECRET_KEY_BASE"]
+end
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   # config.action_controller.asset_host = 'http://assets.example.com'
 
