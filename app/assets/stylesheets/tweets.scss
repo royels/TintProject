@@ -4,3 +4,32 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
+h1, h2, h3, h4, h5, h6 {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: "Helvetica", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 48pt;	
+	vertical-align: middle;
+}
+
+h2
+{
+	font-size: 24pt;
+	text-align: center;
+	font-weight: bold;
+	font-family: "Lato", sans-serif;
+}
+
+#tweeting
+{
+	background-image:  linear-gradient(#005ADE, #0096AD, #00C894);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+}
