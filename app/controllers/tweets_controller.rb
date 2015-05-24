@@ -1,12 +1,11 @@
 class TweetsController < ApplicationController
   def display
 	  @value = params[:tweet][:keyword]
-	  @tweets = $twitter.search(@value, result_type: "recent").take(1).collect
-	  @tweetval = @tweets.next
+	  @tweetval = $twitter.search(@value, result_type: "recent").take(1)
 	  @tweetuser = @tweetval.user.screen_name
-	  @tweetcountry1 = @tweetval.user.location
-	  @tweetcountry2 = @tweetval.place.country
+	  @tweetcountry = @tweetval.user.location
 	  @tweettext = @tweetval.text
+	  @sentiment = Sentimentalizer.analyze(@tweettext)['text']
 	  gon.val = 3
   end
 end
