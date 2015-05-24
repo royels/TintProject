@@ -1,7 +1,8 @@
 class TweetsController < ApplicationController
   def display
 	  @value = params[:tweet][:keyword]
-	  @tweetval = $twitter.search(@value, result_type: "recent").take(1).collect
+	  @tweet = $twitter.search(@value, result_type: "recent").take(1).collect
+	  @tweetval = @tweet.next
 	  @tweetuser = @tweetval.user.screen_name
 	  @tweetcountry = @tweetval.user.location
 	  @tweettext = @tweetval.text
