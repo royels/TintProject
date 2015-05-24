@@ -2,9 +2,9 @@
 <html>
 <head>
   <title>TintProject</title>
-  <%= stylesheet_link_tag "application", params[:controller], :media => "all" %>
-  
-  <%= csrf_meta_tags %>
+  	<%= csrf_meta_tags %>
+  	<%= stylesheet_link_tag "application", params[:controller], :media => "all" %>
+	<%= include_gon %>
 </head>
 <body>
     

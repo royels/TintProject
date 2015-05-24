@@ -1,15 +1,17 @@
-
-
-<div id="tweeting"><h1>Tweets#display</h1>
-<p>Find me in app/views/tweets/display.html.erb</p>
-<p><%= @value.inspect %></p>
-<svg id="fillgauge1" width="97%" height="250"></svg>
-<svg id="fillgauge2" width="19%" height="200"></svg>
-<svg id="fillgauge3" width="19%" height="200"></svg>
-<svg id="fillgauge4" width="19%" height="200"></svg>
-<svg id="fillgauge5" width="19%" height="200"></svg>
-<svg id="fillgauge6" width="19%" height="200"></svg>
+<div id="tweeting">
+	
+	<h1>Tweet Sentiment Data</h1>
+	<br>
+	<h3>Showing results for <%= @value %></h3>
+	
+	<div id="test">
+		<svg id="fillgauge1" width="19%" height="200"></svg>
+		<svg id="fillgauge2" width="19%" height="200"></svg>
+		<br>
+		<svg id="fillgauge3" width="19%" height="200"></svg>
+		<svg id="fillgauge4" width="19%" height="200"></svg>
+		<svg id="fillgauge5" width="19%" height="200"></svg>
+	</div>
 </div>
-
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <%= javascript_include_tag 'liquidFillGauge' %>
