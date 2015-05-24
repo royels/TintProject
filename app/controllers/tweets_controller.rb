@@ -5,6 +5,7 @@ class TweetsController < ApplicationController
 		  @tweetuser = tweet.user.screen_name
 		  @tweetcountry = tweet.user.location
 		  @tweettext = tweet.text
+		  @sentiment = Sentimentalizer.analyze(@tweettext).overall_probability
 	  end
 	  gon.val = 3
   end
