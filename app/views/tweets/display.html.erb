@@ -5,7 +5,7 @@
 	<p>Showing results for <%= @tweetuser %></p>
 	<p>Showing results for <%= @tweetcountry %></p>
 	<p>Showing results for <%= @tweettext %></p>
-	<p>Showing results for <%= @sentiment.inspect %></p>
+	<p>Showing results for <%= @sentiment['overall_probability'] %></p>
 	<div id="test">
 		<svg id="fillgauge1" width="19%" height="200"></svg>
 		<br>
@@ -15,5 +15,5 @@
 		<svg id="fillgauge5" width="19%" height="200"></svg>
 	</div>
 </div>
-<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="http://d3js.org/d3.v3.min.js"></script>
 <%= javascript_include_tag 'liquidFillGauge' %>
