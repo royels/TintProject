@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150521212229) do
+ActiveRecord::Schema.define(version: 20150530060941) do
 
   create_table "tweets", force: :cascade do |t|
     t.string   "content"
@@ -19,6 +19,8 @@ ActiveRecord::Schema.define(version: 20150521212229) do
     t.string   "keyword"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string   "location"
+    t.float    "sentiment"
   end
 
 end
